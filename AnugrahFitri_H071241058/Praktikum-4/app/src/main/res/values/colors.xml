@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Modern Blue Palette -->
+    <color name="blue_primary">#1976D2</color>
+    <color name="blue_dark">#0D47A1</color>
+    <color name="blue_light">#E3F2FD</color>
+    <color name="blue_accent">#448AFF</color>
+
+    <!-- Neutral Colors -->
+    <color name="background_light">#F8FBFF</color>
+    <color name="text_primary">#1A237E</color>
+    <color name="text_secondary">#5C6BC0</color>
+    <color name="card_background">#FFFFFF</color>
+</resources>

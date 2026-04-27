@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F7FF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tambah Buku Baru"
+            android:textColor="#0D47A1"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lengkapi detail buku untuk menambah koleksi perpustakaan."
+            android:textColor="#546E7A"
+            android:textSize="14sp"
+            android:layout_marginBottom="24dp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="160dp"
+            android:layout_height="230dp"
+            android:layout_gravity="center"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp">
+
+            <ImageView
+                android:id="@+id/img_add_cover"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#E3F2FD"
+                android:scaleType="centerCrop"
+                android:src="@android:drawable/ic_menu_gallery"
+                app:tint="#1976D2" />
+        </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_pick_image"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:text="Ubah Gambar Sampul"
+            android:textAllCaps="false"
+            android:textColor="#1976D2"
+            app:icon="@android:drawable/ic_menu_camera"
+            app:iconTint="#1976D2" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Judul Buku"
+            app:startIconDrawable="@android:drawable/ic_menu_edit"
+            app:startIconTint="#1976D2"
+            app:boxStrokeColor="#1976D2"
+            app:boxCornerRadiusBottomEnd="12dp"
+            app:boxCornerRadiusBottomStart="12dp"
+            app:boxCornerRadiusTopEnd="12dp"
+            app:boxCornerRadiusTopStart="12dp"
+            app:hintTextColor="#1976D2">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapWords" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Penulis"
+            app:startIconDrawable="@android:drawable/ic_menu_edit"
+            app:startIconTint="#1976D2"
+            app:boxStrokeColor="#1976D2"
+            app:boxCornerRadiusBottomEnd="12dp"
+            app:boxCornerRadiusBottomStart="12dp"
+            app:boxCornerRadiusTopEnd="12dp"
+            app:boxCornerRadiusTopStart="12dp"
+            app:hintTextColor="#1976D2">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_author"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Tahun"
+                app:boxStrokeColor="#1976D2"
+                app:boxCornerRadiusBottomEnd="12dp"
+                app:boxCornerRadiusBottomStart="12dp"
+                app:boxCornerRadiusTopEnd="12dp"
+                app:boxCornerRadiusTopStart="12dp"
+                app:hintTextColor="#1976D2">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_year"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <View android:layout_width="16dp" android:layout_height="0dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Genre"
+                app:boxStrokeColor="#1976D2"
+                app:boxCornerRadiusBottomEnd="12dp"
+                app:boxCornerRadiusBottomStart="12dp"
+                app:boxCornerRadiusTopEnd="12dp"
+                app:boxCornerRadiusTopStart="12dp"
+                app:hintTextColor="#1976D2">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_genre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Sinopsis/Blurb"
+            app:boxStrokeColor="#1976D2"
+            app:boxCornerRadiusBottomEnd="12dp"
+            app:boxCornerRadiusBottomStart="12dp"
+            app:boxCornerRadiusTopEnd="12dp"
+            app:boxCornerRadiusTopStart="12dp"
+            app:hintTextColor="#1976D2">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_blurb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:lines="5"
+                android:inputType="textMultiLine" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_save"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="20dp"
+            android:text="Simpan Koleksi Buku"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:cornerRadius="15dp"
+            android:backgroundTint="#1976D2"
+            app:elevation="6dp" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

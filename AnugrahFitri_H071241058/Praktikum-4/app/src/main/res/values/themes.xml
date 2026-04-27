@@ -1,0 +1,22 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.LibraryApp" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/blue_primary</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryContainer">@color/blue_light</item>
+        <item name="colorOnPrimaryContainer">@color/blue_dark</item>
+
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/blue_accent</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorSecondaryContainer">@color/blue_light</item>
+        <item name="colorOnSecondaryContainer">@color/blue_primary</item>
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/blue_dark</item>
+        <item name="android:windowBackground">@color/background_light</item>
+    </style>
+
+    <style name="Theme.LibraryApp" parent="Base.Theme.LibraryApp" />
+</resources>
