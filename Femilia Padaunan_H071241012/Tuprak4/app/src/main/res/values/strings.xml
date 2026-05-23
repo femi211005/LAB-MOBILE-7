@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Tuprak4</string>
+
+    <string name="empty_fav">Belum ada buku yang difavoritkan nih.</string>
+
+    <string-array name="genre_array">
+        <item>Semua Genre</item>
+        <item>Classic</item>
+        <item>Classic Romance</item>
+        <item>Historical Fiction</item>
+        <item>Life Advice</item>
+        <item>Philosophy</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
